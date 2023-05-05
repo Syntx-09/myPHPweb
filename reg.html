@@ -1,0 +1,62 @@
+<?php
+session_start();
+
+
+include __DIR__. '/templates/header.html.php';
+include __DIR__.'/inc/regv2.php';
+?>
+
+<?php startblock('title'); echo "Sign Up"; endblock() ?>
+
+<?php startblock('body') ?>
+
+    <h1> Sign Up</h1>
+    <form method="POST" action="">
+        
+        <div>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" value="<?= $fname ?>" id="" />
+            <?= $errMsg['fname'] ?> <br>
+        </div>
+        <div>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" value="<?= $lname ?>" id="" />
+            <?= $errMsg['lname'] ?><br>
+        </div>
+        <div>
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" value="<?= $phone ?>" id=""/>
+            <?= $errMsg['phone'] ?>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" value="<?= $email ?>" id="" />
+            <?= $errMsg['email'] ?>
+        </div>
+        
+        <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" value="<?= $username ?>" id="" />
+            <?= $errMsg['username'] ?>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="" />
+            <?= $errMsg['pass'] ?>
+        </div>
+        <div>
+            <label for="verifyPassword">Verify Password</label>
+            <input type="password" name="verifyPassword" id="" />
+            <?= $errMsg['pass'] ?>
+        </div>
+        <div>
+            <label for="track">Track</label>
+            <input type="radio" name="track" value="farmer" id="" />Farmer
+            <input type="radio" name="track" value="agronomist export" id="" />Agronomist export
+            <?= $errMsg['track'] ?>
+        </div>
+        <div>
+            <button name="register">Register</button>
+        </div>
+    </form>
+<?php endblock() ?>
