@@ -5,7 +5,7 @@ require_once __DIR__. '/dbconn.php';
 
 $errMsg = [];
 
-//This takes collects the data from the form
+//This collects the data from the form
 if (isset($_POST['register'])) {
     $fname = htmlspecialchars($_POST['fname']);
     $lname = htmlspecialchars($_POST['lname']);
