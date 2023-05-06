@@ -1,8 +1,8 @@
 <?php
 
     $host = 'localhost';
-    $user = 'root';
-    $pwd = '';
+    $user = 'yourUsername';//default is- 'root'
+    $pwd = 'yourPassword';//default is null-''
     $dbname = 'personal';
 
     
