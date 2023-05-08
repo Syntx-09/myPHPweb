@@ -4,7 +4,7 @@ include __DIR__. '/templates/header.html.php';
 // session_start();
 
 if (isset($_SESSION['user'])) {
-    header('location: home.html.php');
+    header('location: index.php');
 }
 
 // if (!empty($_COOKIE)) {

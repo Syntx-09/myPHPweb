@@ -115,6 +115,6 @@ if (isset($_POST['register'])) {
 //Login Autenticatin SC
 
 // if (isset($_SESSION['user'])) {
-//     header("location: home.html.php");
+//     header("location: index.php");
 // }
 

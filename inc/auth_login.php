@@ -40,7 +40,7 @@ if (isset($_POST['login'])) {
                     $_SESSION['uid'] = $result['uid'];
 
     
-                    header("location: home.html.php");
+                    header("location: index.php");
                     echo $_COOKIE['loginId'];
                 } else {
                     $errMsg['login'] = "Invalid login details";

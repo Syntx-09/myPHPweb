@@ -11,7 +11,7 @@ include 'templates/header.html';
   <a class="navbar-brand" href="">FarmDesk</a>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="home.html.php">Home</a>
+        <a class="nav-link" href="index.php">Home</a>
       </li>
 
 <?php if (isset($_SESSION)): ?>
